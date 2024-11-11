@@ -2,7 +2,7 @@
 function addMessage(text, sender) {
   const chatBox = document.getElementById('chat-box');
   const message = document.createElement('div');
-  message.className = message ${sender};
+  message.className = `message ${sender}`;
   
   const bubble = document.createElement('div');
   bubble.className = 'bubble';
@@ -21,7 +21,7 @@ function sendStoryRequest() {
   if (storyName === "") return;
 
   // Display the user's story request
-  addMessage(Story: ${storyName}, 'user');
+  addMessage(`Story: ${storyName}`, 'user');
   
   userInput.value = ""; // Clear the input field
 
